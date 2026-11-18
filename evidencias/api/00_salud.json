@@ -1,0 +1,6 @@
+{
+  "estado": "operativo",
+  "base": "geovisor_control",
+  "postgis": "3.4.2",
+  "srid": 9377
+}

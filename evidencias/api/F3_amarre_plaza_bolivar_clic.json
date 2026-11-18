@@ -1,0 +1,119 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70070682,
+          4.54457386
+        ]
+      },
+      "properties": {
+        "codigo": "POL-001-002",
+        "tipo": "Mojón de poligonal",
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4700427.076,
+        "norte": 2060730.785,
+        "distancia_plana_m": 2476.103,
+        "azimut_cuadricula_grados": 298.6918,
+        "distancia_geodesica_m": 2475.352,
+        "linea": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -75.6811,
+              4.5339
+            ],
+            [
+              -75.70070682,
+              4.54457386
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70196189,
+          4.54385971
+        ]
+      },
+      "properties": {
+        "codigo": "POL-001-001",
+        "tipo": "Mojón de poligonal",
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4700287.46,
+        "norte": 2060652.31,
+        "distancia_plana_m": 2564.502,
+        "azimut_cuadricula_grados": 295.6549,
+        "distancia_geodesica_m": 2563.723,
+        "linea": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -75.6811,
+              4.5339
+            ],
+            [
+              -75.70196189,
+              4.54385971
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66480339,
+          4.57148038
+        ]
+      },
+      "properties": {
+        "codigo": "POL-190-002",
+        "tipo": "Mojón de poligonal",
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4704423.508,
+        "norte": 2063692.165,
+        "distancia_plana_m": 4533.438,
+        "azimut_cuadricula_grados": 23.7297,
+        "distancia_geodesica_m": 4532.13,
+        "linea": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -75.6811,
+              4.5339
+            ],
+            [
+              -75.66480339,
+              4.57148038
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "resumen": {
+    "municipio": "Armenia",
+    "este": 4702599.15,
+    "norte": 2059542.011,
+    "punto": {
+      "type": "Point",
+      "coordinates": [
+        -75.6811,
+        4.5339
+      ]
+    }
+  }
+}

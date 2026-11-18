@@ -1,0 +1,246 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64285141,
+          4.49104396
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-130-002",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4706827.672,
+        "norte": 2054786.115
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65303617,
+          4.49075538
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-130-001",
+        "tipo": "Placa de nivelación",
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4705696.956,
+        "norte": 2054758.289
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63966006,
+          4.55584736
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-130-002",
+        "tipo": "Placa de nivelación",
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4707208.002,
+        "norte": 2061952.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70196189,
+          4.54385971
+        ]
+      },
+      "properties": {
+        "codigo": "POL-001-001",
+        "tipo": "Mojón de poligonal",
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4700287.46,
+        "norte": 2060652.31
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70070682,
+          4.54457386
+        ]
+      },
+      "properties": {
+        "codigo": "POL-001-002",
+        "tipo": "Mojón de poligonal",
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4700427.076,
+        "norte": 2060730.785
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63375075,
+          4.51508083
+        ]
+      },
+      "properties": {
+        "codigo": "POL-130-001",
+        "tipo": "Mojón de poligonal",
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4707847.522,
+        "norte": 2057441.159
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.68878291,
+          4.58478282
+        ]
+      },
+      "properties": {
+        "codigo": "POL-190-001",
+        "tipo": "Mojón de poligonal",
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4701767.313,
+        "norte": 2065173.519
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66480339,
+          4.57148038
+        ]
+      },
+      "properties": {
+        "codigo": "POL-190-002",
+        "tipo": "Mojón de poligonal",
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4704423.508,
+        "norte": 2063692.165
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.71152019,
+          4.57701905
+        ]
+      },
+      "properties": {
+        "codigo": "POL-190-003",
+        "tipo": "Mojón de poligonal",
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4699240.241,
+        "norte": 2064324.236
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.72685335,
+          4.58457597
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-190-001",
+        "tipo": "Vértice GNSS",
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4697541.405,
+        "norte": 2065166.613
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.68301316,
+          4.54762159
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-001-004",
+        "tipo": "Placa de nivelación",
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4702392.409,
+        "norte": 2061060.588
+      }
+    }
+  ],
+  "resumen": {
+    "area_km2": 191.5495,
+    "perimetro_m": 55408.9,
+    "total_puntos": 11,
+    "puntos_utilizables": 9,
+    "municipios": [
+      {
+        "municipio": "Armenia",
+        "area_km2": 69.5128,
+        "porcentaje": 36.3
+      },
+      {
+        "municipio": "Calarcá",
+        "area_km2": 53.5665,
+        "porcentaje": 28.0
+      },
+      {
+        "municipio": "Circasia",
+        "area_km2": 43.3418,
+        "porcentaje": 22.6
+      },
+      {
+        "municipio": "Montenegro",
+        "area_km2": 10.7702,
+        "porcentaje": 5.6
+      },
+      {
+        "municipio": "Quimbaya",
+        "area_km2": 7.3748,
+        "porcentaje": 3.9
+      },
+      {
+        "municipio": "Salento",
+        "area_km2": 6.4983,
+        "porcentaje": 3.4
+      },
+      {
+        "municipio": "La Tebaida",
+        "area_km2": 0.484,
+        "porcentaje": 0.3
+      }
+    ]
+  }
+}

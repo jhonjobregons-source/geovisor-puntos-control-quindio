@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geovisor · Red de puntos de control del Quindío</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <aside id="panel">
+    <header>
+      <h1>Red de puntos de control topográfico</h1>
+      <p class="subtitulo">Quindío · MAGNA-SIRGAS Origen Nacional (EPSG:9377) · PostGIS → FastAPI → Leaflet</p>
+      <div id="estado-conexion" class="estado">Verificando conexión…</div>
+    </header>
+
+    <!-- F1 -->
+    <section class="funcion" id="sec-f1">
+      <h2><span>F1</span> Visualización</h2>
+      <label><input type="checkbox" id="chk-departamento" checked> Límite departamental</label>
+      <label><input type="checkbox" id="chk-municipios" checked> Municipios</label>
+      <label><input type="checkbox" id="chk-puntos" checked> Puntos de control</label>
+      <label class="fila">Simbolizar por
+        <select id="sel-simbologia">
+          <option value="estado">Estado vigente</option>
+          <option value="tipo">Tipo de punto</option>
+        </select>
+      </label>
+      <p class="ayuda">Haga clic sobre un punto para consultar su ficha técnica (F2).</p>
+    </section>
+
+    <!-- F2 -->
+    <section class="funcion" id="sec-f2">
+      <h2><span>F2</span> Consulta de atributos</h2>
+      <div class="rejilla">
+        <label>Tipo<select id="f2-tipo"><option value="">Todos</option></select></label>
+        <label>Estado<select id="f2-estado"><option value="">Todos</option></select></label>
+        <label>Orden máx.<select id="f2-orden"><option value="">Todos</option><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+        <label>Municipio<select id="f2-municipio"><option value="">Todos</option></select></label>
+        <label class="ancho">Código contiene<input type="text" id="f2-texto" maxlength="20" placeholder="Ej.: GNSS-001"></label>
+      </div>
+      <button class="btn" id="btn-f2">Buscar</button>
+    </section>
+
+    <!-- F3 -->
+    <section class="funcion" id="sec-f3">
+      <h2><span>F3</span> Puntos de amarre</h2>
+      <div class="rejilla">
+        <label>Cantidad<input type="number" id="f3-n" value="3" min="1" max="10"></label>
+        <label class="check"><input type="checkbox" id="f3-buenos" checked> Solo en buen estado</label>
+      </div>
+      <button class="btn" id="btn-f3">Activar y hacer clic en el mapa</button>
+      <div class="rejilla" style="margin-top:8px">
+        <label>Este (m)<input type="text" id="f3-este" placeholder="4702599.150"></label>
+        <label>Norte (m)<input type="text" id="f3-norte" placeholder="2059542.011"></label>
+      </div>
+      <button class="btn" id="btn-f3-coord">Buscar por coordenadas EPSG:9377</button>
+      <p class="ayuda">Puntos más cercanos a la ubicación del levantamiento: distancia plana y azimut de cuadrícula en EPSG:9377, y distancia geodésica como comparación.</p>
+    </section>
+
+    <!-- F4 -->
+    <section class="funcion" id="sec-f4">
+      <h2><span>F4</span> Análisis de zona de proyecto</h2>
+      <button class="btn" id="btn-f4">Dibujar polígono</button>
+      <p class="ayuda">Área y perímetro en el plano EPSG:9377, puntos de control contenidos y reparto del área entre municipios.</p>
+    </section>
+
+    <!-- F5 -->
+    <section class="funcion" id="sec-f5">
+      <h2><span>F5</span> Cobertura municipal</h2>
+      <label class="fila">Contar puntos
+        <select id="f5-estado"><option value="Bueno">En buen estado</option><option value="">Todos</option></select>
+      </label>
+      <button class="btn" id="btn-f5">Generar mapa temático</button>
+    </section>
+
+    <button id="btn-limpiar" class="btn-secundario">Limpiar resultados</button>
+
+    <section id="resultados">
+      <h2>Resultados</h2>
+      <div id="contenido-resultados" class="vacio">Seleccione una funcionalidad.</div>
+    </section>
+
+    <section id="registro">
+      <h2>Peticiones a la API</h2>
+      <ol id="lista-peticiones"></ol>
+    </section>
+  </aside>
+
+  <main id="mapa"></main>
+  <div id="aviso" class="oculto"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

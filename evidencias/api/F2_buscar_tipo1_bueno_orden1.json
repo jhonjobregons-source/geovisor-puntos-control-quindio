@@ -1,0 +1,208 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64285141,
+          4.49104396
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-130-002",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "altura_m": 1611.098,
+        "municipio": "Calarcá",
+        "este": 4706827.672,
+        "norte": 2054786.115
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60711436,
+          4.46928341
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-130-003",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "altura_m": 1894.828,
+        "municipio": "Calarcá",
+        "este": 4710786.175,
+        "norte": 2052365.016
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70310063,
+          4.7060671
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-272-002",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "altura_m": 1863.114,
+        "municipio": "Filandia",
+        "este": 4700229.361,
+        "norte": 2078595.407
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.7778574,
+          4.25211992
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-302-002",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "altura_m": 1915.83,
+        "municipio": "Génova",
+        "este": 4691742.269,
+        "norte": 2028411.512
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.77911124,
+          4.29825041
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-302-003",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "altura_m": 2804.271,
+        "municipio": "Génova",
+        "este": 4691621.489,
+        "norte": 2033515.037
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.80052582,
+          4.23889286
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-302-007",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "altura_m": 1936.382,
+        "municipio": "Génova",
+        "este": 4689219.477,
+        "norte": 2026957.383
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.84740841,
+          4.45985374
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-470-001",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "altura_m": 1283.758,
+        "municipio": "Montenegro",
+        "este": 4684104.786,
+        "norte": 2051420.855
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.72371876,
+          4.23721235
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-548-003",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "altura_m": 1758.117,
+        "municipio": "Pijao",
+        "este": 4697748.76,
+        "norte": 2026741.072
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58431225,
+          4.56609962
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-690-001",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "altura_m": 1981.684,
+        "municipio": "Salento",
+        "este": 4713355.456,
+        "norte": 2063064.387
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57053453,
+          4.69823469
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-690-005",
+        "tipo": "Vértice GNSS",
+        "orden": 1,
+        "estado": "Bueno",
+        "altura_m": 2025.851,
+        "municipio": "Salento",
+        "este": 4714937.651,
+        "norte": 2077673.525
+      }
+    }
+  ],
+  "resumen": {
+    "total": 10
+  }
+}

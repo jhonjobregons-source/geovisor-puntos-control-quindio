@@ -1,0 +1,128 @@
+-- Salida de: psql -U postgres -d geovisor_control -f sql/03_verificacion.sql
+-- PostgreSQL 16 + PostGIS 3.4.2 · SRID 9377
+
+SELECT postgis_lib_version() AS postgis, version() AS postgresql;
+ postgis |                                                                postgresql                                                                
+---------+------------------------------------------------------------------------------------------------------------------------------------------
+ 3.4.2   | PostgreSQL 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+(1 row)
+
+SELECT 'departamento' AS tabla, COUNT(*) AS registros FROM departamento
+UNION ALL SELECT 'municipio',     COUNT(*) FROM municipio
+UNION ALL SELECT 'tipo_punto',    COUNT(*) FROM tipo_punto
+UNION ALL SELECT 'punto_control', COUNT(*) FROM punto_control
+UNION ALL SELECT 'inspeccion',    COUNT(*) FROM inspeccion;
+     tabla     | registros 
+---------------+-----------
+ departamento  |         1
+ municipio     |        12
+ tipo_punto    |         3
+ punto_control |       129
+ inspeccion    |       326
+(5 rows)
+
+SELECT tc.table_name AS tabla, kcu.column_name AS columna,
+       ccu.table_name AS referencia, ccu.column_name AS columna_referida
+  FROM information_schema.table_constraints tc
+  JOIN information_schema.key_column_usage kcu ON kcu.constraint_name = tc.constraint_name
+  JOIN information_schema.constraint_column_usage ccu ON ccu.constraint_name = tc.constraint_name
+ WHERE tc.constraint_type = 'FOREIGN KEY'
+ ORDER BY 1, 2;
+     tabla     |     columna      |  referencia   | columna_referida 
+---------------+------------------+---------------+------------------
+ inspeccion    | id_punto         | punto_control | id_punto
+ municipio     | cod_departamento | departamento  | cod_departamento
+ punto_control | cod_municipio    | municipio     | cod_municipio
+ punto_control | id_tipo          | tipo_punto    | id_tipo
+(4 rows)
+
+SELECT f_table_name AS tabla, f_geometry_column AS columna, type AS tipo, srid
+  FROM geometry_columns ORDER BY 1;
+     tabla     | columna |     tipo     | srid 
+---------------+---------+--------------+------
+ departamento  | geom    | MULTIPOLYGON | 9377
+ municipio     | geom    | MULTIPOLYGON | 9377
+ punto_control | geom    | POINT        | 9377
+(3 rows)
+
+SELECT 'municipio' AS capa, COUNT(*) FILTER (WHERE NOT ST_IsValid(geom)) AS invalidas FROM municipio
+UNION ALL
+SELECT 'punto_control', COUNT(*) FILTER (WHERE NOT ST_IsValid(geom)) FROM punto_control;
+     capa      | invalidas 
+---------------+-----------
+ municipio     |         0
+ punto_control |         0
+(2 rows)
+
+SELECT ROUND((ST_Area(d.geom) / 1e6)::numeric, 3)                              AS area_departamento_km2,
+       ROUND((SUM(ST_Area(m.geom)) / 1e6)::numeric, 3)                          AS suma_municipios_km2,
+       ROUND((ST_Area(ST_Difference(d.geom, ST_Union(m.geom))) / 1e6)::numeric, 4) AS hueco_sin_municipio_km2
+  FROM departamento d JOIN municipio m USING (cod_departamento)
+ GROUP BY d.geom;
+ area_departamento_km2 | suma_municipios_km2 | hueco_sin_municipio_km2 
+-----------------------+---------------------+-------------------------
+              1931.032 |            1931.026 |                  0.0080
+(1 row)
+
+SELECT COUNT(*) FILTER (WHERE cod_municipio IS NULL)                         AS sin_municipio,
+       COUNT(*) FILTER (WHERE NOT ST_Covers(m.geom, p.geom))                 AS fuera_de_su_municipio
+  FROM punto_control p LEFT JOIN municipio m USING (cod_municipio);
+ sin_municipio | fuera_de_su_municipio 
+---------------+-----------------------
+             0 |                     0
+(1 row)
+
+SELECT COUNT(*) AS estados_inconsistentes
+  FROM punto_control p
+ WHERE p.estado <> (SELECT i.estado_encontrado FROM inspeccion i
+                     WHERE i.id_punto = p.id_punto ORDER BY i.fecha DESC LIMIT 1);
+ estados_inconsistentes 
+------------------------
+                      0
+(1 row)
+
+DO $$
+BEGIN
+    BEGIN
+        INSERT INTO punto_control (codigo, id_tipo, orden, estado, geom)
+        VALUES ('PRUEBA-FK', 99, 1, 'Bueno', ST_SetSRID(ST_MakePoint(4702600, 2059540), 9377));
+        RAISE NOTICE 'FALLA: se aceptó un tipo de punto inexistente';
+    EXCEPTION WHEN foreign_key_violation THEN
+        RAISE NOTICE 'OK: llave foránea rechaza id_tipo = 99';
+    END;
+    BEGIN
+        INSERT INTO punto_control (codigo, id_tipo, orden, estado, geom)
+        VALUES ('PRUEBA-CK', 1, 1, 'Perdido', ST_SetSRID(ST_MakePoint(4702600, 2059540), 9377));
+        RAISE NOTICE 'FALLA: se aceptó un estado no válido';
+    EXCEPTION WHEN check_violation THEN
+        RAISE NOTICE 'OK: CHECK rechaza estado = Perdido';
+    END;
+    BEGIN
+        INSERT INTO punto_control (codigo, id_tipo, orden, estado, geom)
+        SELECT codigo, id_tipo, orden, estado, geom FROM punto_control LIMIT 1;
+        RAISE NOTICE 'FALLA: se aceptó un código duplicado';
+    EXCEPTION WHEN unique_violation THEN
+        RAISE NOTICE 'OK: UNIQUE rechaza código duplicado';
+    END;
+END $$;
+psql:sql/03_verificacion.sql:76: NOTICE:  OK: llave foránea rechaza id_tipo = 99
+psql:sql/03_verificacion.sql:76: NOTICE:  OK: CHECK rechaza estado = Perdido
+psql:sql/03_verificacion.sql:76: NOTICE:  OK: UNIQUE rechaza código duplicado
+DO
+SELECT * FROM v_resumen_municipio ORDER BY cod_municipio;
+ cod_municipio |   nombre   | area_km2 | total_puntos | puntos_buenos 
+---------------+------------+----------+--------------+---------------
+ 63001         | Armenia    |   123.38 |            8 |             6
+ 63111         | Buenavista |    40.27 |            6 |             6
+ 63130         | Calarcá    |   221.44 |           14 |            12
+ 63190         | Circasia   |    90.74 |            6 |             4
+ 63212         | Córdoba    |    91.84 |            6 |             2
+ 63272         | Filandia   |   109.38 |            7 |             4
+ 63302         | Génova     |   297.43 |           19 |            16
+ 63401         | La Tebaida |    89.87 |            6 |             4
+ 63470         | Montenegro |   146.88 |           10 |             7
+ 63548         | Pijao      |   245.16 |           16 |            13
+ 63594         | Quimbaya   |   134.73 |            9 |             9
+ 63690         | Salento    |   339.90 |           22 |            16
+(12 rows)
+

@@ -1,0 +1,16 @@
+{
+  "detail": [
+    {
+      "type": "string_pattern_mismatch",
+      "loc": [
+        "query",
+        "municipio"
+      ],
+      "msg": "String should match pattern '^\\d{5}$'",
+      "input": "abc",
+      "ctx": {
+        "pattern": "^\\d{5}$"
+      }
+    }
+  ]
+}

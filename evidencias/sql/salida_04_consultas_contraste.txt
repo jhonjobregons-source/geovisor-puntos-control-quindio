@@ -1,0 +1,161 @@
+-- Salida de: psql -U postgres -d geovisor_control -f sql/04_consultas_contraste.sql
+-- PostgreSQL 16 + PostGIS 3.4.2 · SRID 9377
+
+SELECT f_table_name AS tabla, type AS tipo, srid FROM geometry_columns ORDER BY 1;
+     tabla     |     tipo     | srid 
+---------------+--------------+------
+ departamento  | MULTIPOLYGON | 9377
+ municipio     | MULTIPOLYGON | 9377
+ punto_control | POINT        | 9377
+(3 rows)
+
+SELECT 'departamento' AS capa, COUNT(*) AS entidades, ROUND((SUM(ST_Area(geom)) / 1e6)::numeric, 2) AS area_km2 FROM departamento
+UNION ALL
+SELECT 'municipios', COUNT(*), ROUND((SUM(ST_Area(geom)) / 1e6)::numeric, 2) FROM municipio
+UNION ALL
+SELECT 'puntos', COUNT(*), NULL FROM punto_control;
+     capa     | entidades | area_km2 
+--------------+-----------+----------
+ departamento |         1 |  1931.03
+ municipios   |        12 |  1931.03
+ puntos       |       129 |         
+(3 rows)
+
+SELECT p.codigo, t.nombre AS tipo, p.orden, p.estado, m.nombre AS municipio
+  FROM punto_control p
+  JOIN tipo_punto t ON t.id_tipo = p.id_tipo
+  JOIN municipio  m ON m.cod_municipio = p.cod_municipio
+ WHERE p.id_tipo = 1 AND p.estado = 'Bueno' AND p.orden <= 1
+ ORDER BY p.orden, p.codigo;
+    codigo    |     tipo     | orden | estado | municipio  
+--------------+--------------+-------+--------+------------
+ GNSS-130-002 | Vértice GNSS |     1 | Bueno  | Calarcá
+ GNSS-130-003 | Vértice GNSS |     1 | Bueno  | Calarcá
+ GNSS-272-002 | Vértice GNSS |     1 | Bueno  | Filandia
+ GNSS-302-002 | Vértice GNSS |     1 | Bueno  | Génova
+ GNSS-302-003 | Vértice GNSS |     1 | Bueno  | Génova
+ GNSS-302-007 | Vértice GNSS |     1 | Bueno  | Génova
+ GNSS-470-001 | Vértice GNSS |     1 | Bueno  | Montenegro
+ GNSS-548-003 | Vértice GNSS |     1 | Bueno  | Pijao
+ GNSS-690-001 | Vértice GNSS |     1 | Bueno  | Salento
+ GNSS-690-005 | Vértice GNSS |     1 | Bueno  | Salento
+(10 rows)
+
+SELECT p.codigo, p.estado,
+       ROUND(ST_X(p.geom)::numeric, 3) AS este,
+       ROUND(ST_Y(p.geom)::numeric, 3) AS norte
+  FROM punto_control p WHERE p.codigo = 'NIV-001-001';
+   codigo    |   estado    |    este     |    norte    
+-------------+-------------+-------------+-------------
+ NIV-001-001 | Deteriorado | 4691846.787 | 2055069.933
+(1 row)
+
+SELECT i.fecha, i.estado_encontrado, i.observacion
+  FROM inspeccion i JOIN punto_control p USING (id_punto)
+ WHERE p.codigo = 'NIV-001-001'
+ ORDER BY i.fecha DESC;
+   fecha    | estado_encontrado |                       observacion                       
+------------+-------------------+---------------------------------------------------------
+ 2024-11-05 | Deteriorado       | Placa desgastada o base fisurada; usar con verificación
+ 2023-12-15 | Deteriorado       | Placa desgastada o base fisurada; usar con verificación
+ 2023-07-08 | Bueno             | Placa legible y estructura firme
+ 2023-01-04 | Bueno             | Materialización y primera ocupación
+(4 rows)
+
+WITH origen AS (SELECT ST_SetSRID(ST_MakePoint(4702599.150, 2059542.011), 9377) AS g)
+SELECT p.codigo,
+       ROUND(ST_Distance(o.g, p.geom)::numeric, 3)                          AS distancia_plana_m,
+       ROUND(degrees(ST_Azimuth(o.g, p.geom))::numeric, 4)                  AS azimut_cuadricula_grados,
+       ROUND(ST_Distance(ST_Transform(o.g, 4326)::geography,
+                         ST_Transform(p.geom, 4326)::geography)::numeric, 3) AS distancia_geodesica_m
+  FROM punto_control p CROSS JOIN origen o
+ WHERE p.estado = 'Bueno'
+ ORDER BY p.geom <-> o.g
+ LIMIT 3;
+   codigo    | distancia_plana_m | azimut_cuadricula_grados | distancia_geodesica_m 
+-------------+-------------------+--------------------------+-----------------------
+ POL-001-002 |          2476.104 |                 298.6918 |              2475.353
+ POL-001-001 |          2564.503 |                 295.6549 |              2563.724
+ POL-190-002 |          4533.438 |                  23.7297 |              4532.130
+(3 rows)
+
+WITH origen AS (SELECT ST_SetSRID(ST_MakePoint(4702599.150, 2059542.011), 9377) AS g)
+SELECT p.codigo, ROUND(ST_Distance(o.g, p.geom)::numeric, 3) AS distancia_plana_m
+  FROM punto_control p CROSS JOIN origen o
+ WHERE p.estado = 'Bueno'
+ ORDER BY 2
+ LIMIT 3;
+   codigo    | distancia_plana_m 
+-------------+-------------------
+ POL-001-002 |          2476.104
+ POL-001-001 |          2564.503
+ POL-190-002 |          4533.438
+(3 rows)
+
+WITH o AS (SELECT 4702599.150 AS e0, 2059542.011 AS n0),
+     p AS (SELECT codigo, ST_X(geom) AS e, ST_Y(geom) AS n FROM punto_control
+            WHERE estado = 'Bueno'
+            ORDER BY geom <-> ST_SetSRID(ST_MakePoint(4702599.150, 2059542.011), 9377) LIMIT 1)
+SELECT p.codigo,
+       ROUND(sqrt((p.e - o.e0)^2 + (p.n - o.n0)^2)::numeric, 3)                          AS distancia_manual_m,
+       ROUND(mod((degrees(atan2(p.e - o.e0, p.n - o.n0)) + 360)::numeric, 360), 4)        AS azimut_manual_grados
+  FROM p, o;
+   codigo    | distancia_manual_m | azimut_manual_grados 
+-------------+--------------------+----------------------
+ POL-001-002 |           2476.104 |             298.6918
+(1 row)
+
+WITH z AS (SELECT ST_Transform(ST_MakeEnvelope(-75.75, 4.48, -75.62, 4.60, 4326), 9377) AS g)
+SELECT ROUND((ST_Area(z.g) / 1e6)::numeric, 4)                AS area_km2,
+       ROUND(ST_Perimeter(z.g)::numeric, 2)                     AS perimetro_m,
+       COUNT(p.id_punto)                                        AS total_puntos,
+       COUNT(p.id_punto) FILTER (WHERE p.estado = 'Bueno')      AS puntos_utilizables
+  FROM z LEFT JOIN punto_control p ON ST_Covers(z.g, p.geom)
+ GROUP BY z.g;
+ area_km2 | perimetro_m | total_puntos | puntos_utilizables 
+----------+-------------+--------------+--------------------
+ 191.5495 |    55408.90 |           11 |                  9
+(1 row)
+
+WITH z AS (SELECT ST_Transform(ST_MakeEnvelope(-75.75, 4.48, -75.62, 4.60, 4326), 9377) AS g)
+SELECT m.nombre,
+       ROUND((ST_Area(ST_Intersection(m.geom, z.g)) / 1e6)::numeric, 4) AS area_km2
+  FROM municipio m CROSS JOIN z
+ WHERE ST_Intersects(m.geom, z.g)
+ ORDER BY 2 DESC;
+   nombre   | area_km2 
+------------+----------
+ Armenia    |  69.5128
+ Calarcá    |  53.5665
+ Circasia   |  43.3418
+ Montenegro |  10.7702
+ Quimbaya   |   7.3748
+ Salento    |   6.4983
+ La Tebaida |   0.4840
+(7 rows)
+
+SELECT m.nombre,
+       COUNT(p.id_punto)                                         AS por_union_espacial,
+       (SELECT COUNT(*) FROM punto_control q
+         WHERE q.cod_municipio = m.cod_municipio AND q.estado = 'Bueno') AS por_llave_foranea,
+       ROUND((COUNT(p.id_punto) / (ST_Area(m.geom) / 1e8))::numeric, 2) AS puntos_100km2
+  FROM municipio m
+  LEFT JOIN punto_control p ON ST_Covers(m.geom, p.geom) AND p.estado = 'Bueno'
+ GROUP BY m.cod_municipio, m.nombre, m.geom
+ ORDER BY puntos_100km2 DESC;
+   nombre   | por_union_espacial | por_llave_foranea | puntos_100km2 
+------------+--------------------+-------------------+---------------
+ Buenavista |                  6 |                 6 |         14.90
+ Quimbaya   |                  9 |                 9 |          6.68
+ Calarcá    |                 12 |                12 |          5.42
+ Génova     |                 16 |                16 |          5.38
+ Pijao      |                 13 |                13 |          5.30
+ Armenia    |                  6 |                 6 |          4.86
+ Montenegro |                  7 |                 7 |          4.77
+ Salento    |                 16 |                16 |          4.71
+ La Tebaida |                  4 |                 4 |          4.45
+ Circasia   |                  4 |                 4 |          4.41
+ Filandia   |                  4 |                 4 |          3.66
+ Córdoba    |                  2 |                 2 |          2.18
+(12 rows)
+

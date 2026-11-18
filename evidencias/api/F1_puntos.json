@@ -1,0 +1,2456 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.75528388,
+          4.34792937
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-111-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4694287.42,
+        "norte": 2039000.908
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61267543,
+          4.55157695
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-130-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4710201.509,
+        "norte": 2061469.45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64285141,
+          4.49104396
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-130-002",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4706827.672,
+        "norte": 2054786.115
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60711436,
+          4.46928341
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-130-003",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4710786.175,
+        "norte": 2052365.016
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6967325,
+          4.46895548
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-130-004",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4700837.289,
+        "norte": 2052364.651
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61900695,
+          4.49137204
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-130-005",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4709474.717,
+        "norte": 2054812.879
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.72685335,
+          4.58457597
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-190-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4697541.405,
+        "norte": 2065166.613
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58442246,
+          4.41082926
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-212-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Deteriorado",
+        "este": 4713282.559,
+        "norte": 2045890.833
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58129377,
+          4.69827499
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-272-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4713743.709,
+        "norte": 2077682.382
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70310063,
+          4.7060671
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-272-002",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4700229.361,
+        "norte": 2078595.407
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70248068,
+          4.66696726
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-272-003",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4700281.483,
+        "norte": 2074270.095
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.67216272,
+          4.20555871
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-302-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4703462.082,
+        "norte": 2023219.878
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.7778574,
+          4.25211992
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-302-002",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4691742.269,
+        "norte": 2028411.512
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.77911124,
+          4.29825041
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-302-003",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4691621.489,
+        "norte": 2033515.037
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.80970464,
+          4.18339687
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-302-004",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4688177.945,
+        "norte": 2020821.873
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.72417733,
+          4.18035848
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-302-005",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Deteriorado",
+        "este": 4697675.873,
+        "norte": 2020452.287
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.702424,
+          4.17246571
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-302-006",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4700088.807,
+        "norte": 2019570.888
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.80052582,
+          4.23889286
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-302-007",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4689219.477,
+        "norte": 2026957.383
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.80756187,
+          4.45339714
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-401-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4688526.238,
+        "norte": 2050689.605
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.78044118,
+          4.43776401
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-401-002",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4691530.887,
+        "norte": 2048948.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.81324146,
+          4.44639879
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-401-003",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4687892.683,
+        "norte": 2049917.815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.84740841,
+          4.45985374
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-470-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4684104.786,
+        "norte": 2051420.855
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.80316603,
+          4.48907586
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-470-002",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Deteriorado",
+        "este": 4689029.37,
+        "norte": 2054634.677
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.75558164,
+          4.32251314
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-548-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4694244.127,
+        "norte": 2036189.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70372697,
+          4.25593967
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-548-002",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4699976.142,
+        "norte": 2028804.81
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.72371876,
+          4.23721235
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-548-003",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4697748.76,
+        "norte": 2026741.072
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.7906133,
+          4.59754986
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-594-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4690469.345,
+        "norte": 2066629.088
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.74976601,
+          4.60131247
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-594-002",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4695005.154,
+        "norte": 2067027.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58431225,
+          4.56609962
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-690-001",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4713355.456,
+        "norte": 2063064.387
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5459573,
+          4.64690398
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-690-002",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Deteriorado",
+        "este": 4717644.398,
+        "norte": 2071986.284
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53068613,
+          4.64159539
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-690-003",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4719337.022,
+        "norte": 2071393.066
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59249656,
+          4.59320281
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-690-004",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4712457.898,
+        "norte": 2066065.415
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57053453,
+          4.69823469
+        ]
+      },
+      "properties": {
+        "codigo": "GNSS-690-005",
+        "tipo": "Vértice GNSS",
+        "id_tipo": 1,
+        "orden": 1,
+        "estado": "Bueno",
+        "este": 4714937.651,
+        "norte": 2077673.525
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.77780428,
+          4.49310759
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-001-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4691846.787,
+        "norte": 2055069.933
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.73703016,
+          4.47787227
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-001-002",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4696367.176,
+        "norte": 2053367.551
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.73747314,
+          4.43524992
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-001-003",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4696300.479,
+        "norte": 2048652.933
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.68301316,
+          4.54762159
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-001-004",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4702392.409,
+        "norte": 2061060.588
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.78225659,
+          4.48326175
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-001-005",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4691348.346,
+        "norte": 2053982.644
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.74690016,
+          4.36794334
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-111-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4695226.419,
+        "norte": 2041211.436
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.7431075,
+          4.337027
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-111-002",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4695635.106,
+        "norte": 2037789.984
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.75758514,
+          4.34574372
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-111-003",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4694031.005,
+        "norte": 2038760.065
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65303617,
+          4.49075538
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-130-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4705696.956,
+        "norte": 2054758.289
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63966006,
+          4.55584736
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-130-002",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4707208.002,
+        "norte": 2061952.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59472814,
+          4.46732732
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-130-003",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4712160.382,
+        "norte": 2052143.795
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6862072,
+          4.45439752
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-130-004",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Destruido",
+        "este": 4701999.891,
+        "norte": 2050750.065
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.69755671,
+          4.60199711
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-190-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4700800.618,
+        "norte": 2067081.335
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62882039,
+          4.62634007
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-190-002",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Deteriorado",
+        "este": 4708439.839,
+        "norte": 2069745.404
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65371556,
+          4.40808516
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-212-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Destruido",
+        "este": 4705588.656,
+        "norte": 2045614.371
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65731065,
+          4.37328145
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-212-002",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4705175.843,
+        "norte": 2041766.132
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59524232,
+          4.36441857
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-212-003",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4712063.581,
+        "norte": 2040761.748
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62662373,
+          4.66417258
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-272-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Deteriorado",
+        "este": 4708699.185,
+        "norte": 2073929.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.73120946,
+          4.61168781
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-272-002",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4697069.337,
+        "norte": 2068167.508
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.73164238,
+          4.20652719
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-302-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4696856.89,
+        "norte": 2023349.87
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.79342607,
+          4.26451604
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-302-002",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4690018.228,
+        "norte": 2029789.043
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70993544,
+          4.20467679
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-302-003",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4699266.897,
+        "norte": 2023136.784
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.76941901,
+          4.09617914
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-302-004",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4692618.663,
+        "norte": 2011157.916
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.76882365,
+          4.127254
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-302-005",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Deteriorado",
+        "este": 4692696.715,
+        "norte": 2014595.195
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.80997306,
+          4.22119738
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-302-006",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4688163.173,
+        "norte": 2025003.633
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.8014739,
+          4.10406161
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-302-007",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4689061.09,
+        "norte": 2012042.275
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.69841866,
+          4.2313311
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-302-008",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4700556.128,
+        "norte": 2026080.694
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.77695858,
+          4.11037107
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-302-009",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4691786.633,
+        "norte": 2012730.739
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.75875996,
+          4.08957595
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-302-010",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4693800.126,
+        "norte": 2010423.394
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.83395057,
+          4.46637957
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-470-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4685601.812,
+        "norte": 2052137.023
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.81457209,
+          4.50020913
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-470-002",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4687767.768,
+        "norte": 2055871.162
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.81632729,
+          4.4588381
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-470-003",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4687555.315,
+        "norte": 2051295.225
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.85023006,
+          4.57611815
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-470-004",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4683841.935,
+        "norte": 2064284.256
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.80430068,
+          4.56938099
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-470-005",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4688937.761,
+        "norte": 2063518.871
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6041993,
+          4.31189803
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-548-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4711049.157,
+        "norte": 2034956.106
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70009788,
+          4.36050065
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-548-002",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4700420.123,
+        "norte": 2040369.34
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.68249364,
+          4.25624962
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-548-003",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4702334.177,
+        "norte": 2028830.863
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6447396,
+          4.2541428
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-548-004",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4706525.782,
+        "norte": 2028583.354
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64982233,
+          4.32292118
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-548-005",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4705987.705,
+        "norte": 2036192.85
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.75296406,
+          4.62298143
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-594-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4694659.434,
+        "norte": 2069426.106
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57070943,
+          4.52924325
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-690-001",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4714850.74,
+        "norte": 2058982.534
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5820779,
+          4.64831921
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-690-002",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4713636.392,
+        "norte": 2072157.358
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53696247,
+          4.53403273
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-690-003",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4718598.338,
+        "norte": 2059499.06
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54049049,
+          4.61639886
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-690-004",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4718238.994,
+        "norte": 2068610.202
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59401165,
+          4.61328924
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-690-005",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4712297.818,
+        "norte": 2068287.697
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.49416079,
+          4.61798448
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-690-006",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Deteriorado",
+        "este": 4723381.206,
+        "norte": 2068767.374
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.52927385,
+          4.58765075
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-690-007",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4719472.547,
+        "norte": 2065426.225
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.51149793,
+          4.58649557
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-690-008",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 2,
+        "estado": "Bueno",
+        "este": 4721444.926,
+        "norte": 2065291.518
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57424748,
+          4.63818808
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-690-009",
+        "tipo": "Placa de nivelación",
+        "id_tipo": 2,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4714501.323,
+        "norte": 2071033.644
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70196189,
+          4.54385971
+        ]
+      },
+      "properties": {
+        "codigo": "POL-001-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4700287.46,
+        "norte": 2060652.31
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70070682,
+          4.54457386
+        ]
+      },
+      "properties": {
+        "codigo": "POL-001-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4700427.076,
+        "norte": 2060730.785
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.73973381,
+          4.46467334
+        ]
+      },
+      "properties": {
+        "codigo": "POL-001-003",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4696061.571,
+        "norte": 2051908.629
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.73588804,
+          4.35025502
+        ]
+      },
+      "properties": {
+        "codigo": "POL-111-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4696442.053,
+        "norte": 2039250.336
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.72094122,
+          4.35121132
+        ]
+      },
+      "properties": {
+        "codigo": "POL-111-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4698102.09,
+        "norte": 2039350.119
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63375075,
+          4.51508083
+        ]
+      },
+      "properties": {
+        "codigo": "POL-130-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4707847.522,
+        "norte": 2057441.159
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59597694,
+          4.50202804
+        ]
+      },
+      "properties": {
+        "codigo": "POL-130-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4712035.363,
+        "norte": 2055982.374
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65919981,
+          4.47166087
+        ]
+      },
+      "properties": {
+        "codigo": "POL-130-003",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4705005.067,
+        "norte": 2052648.711
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66935133,
+          4.42157744
+        ]
+      },
+      "properties": {
+        "codigo": "POL-130-004",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Destruido",
+        "este": 4703858.086,
+        "norte": 2047112.978
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58275674,
+          4.45854263
+        ]
+      },
+      "properties": {
+        "codigo": "POL-130-005",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4713485.886,
+        "norte": 2051167.49
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.68878291,
+          4.58478282
+        ]
+      },
+      "properties": {
+        "codigo": "POL-190-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4701767.313,
+        "norte": 2065173.519
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66480339,
+          4.57148038
+        ]
+      },
+      "properties": {
+        "codigo": "POL-190-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4704423.508,
+        "norte": 2063692.165
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.71152019,
+          4.57701905
+        ]
+      },
+      "properties": {
+        "codigo": "POL-190-003",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4699240.241,
+        "norte": 2064324.236
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70300335,
+          4.39947785
+        ]
+      },
+      "properties": {
+        "codigo": "POL-212-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Deteriorado",
+        "este": 4700113.065,
+        "norte": 2044681.95
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.71666821,
+          4.38412914
+        ]
+      },
+      "properties": {
+        "codigo": "POL-212-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4698589.708,
+        "norte": 2042989.646
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63623861,
+          4.67546844
+        ]
+      },
+      "properties": {
+        "codigo": "POL-272-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4707636.802,
+        "norte": 2075182.517
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65211975,
+          4.69144883
+        ]
+      },
+      "properties": {
+        "codigo": "POL-272-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Destruido",
+        "este": 4705880.996,
+        "norte": 2076956.757
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.71112269,
+          4.15755753
+        ]
+      },
+      "properties": {
+        "codigo": "POL-302-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4699117.05,
+        "norte": 2017925.143
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.71375075,
+          4.22013383
+        ]
+      },
+      "properties": {
+        "codigo": "POL-302-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4698849.134,
+        "norte": 2024848.041
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.80311013,
+          4.42380894
+        ]
+      },
+      "properties": {
+        "codigo": "POL-401-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4689008.108,
+        "norte": 2047414.555
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.8558808,
+          4.46178972
+        ]
+      },
+      "properties": {
+        "codigo": "POL-401-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Deteriorado",
+        "este": 4683164.905,
+        "norte": 2051638.674
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.80499218,
+          4.46097904
+        ]
+      },
+      "properties": {
+        "codigo": "POL-401-003",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4688814.742,
+        "norte": 2051527.261
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.81828073,
+          4.49870581
+        ]
+      },
+      "properties": {
+        "codigo": "POL-470-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4687355.38,
+        "norte": 2055706.446
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.84457871,
+          4.52412948
+        ]
+      },
+      "properties": {
+        "codigo": "POL-470-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4684446.645,
+        "norte": 2058530.348
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.8074516,
+          4.56679417
+        ]
+      },
+      "properties": {
+        "codigo": "POL-470-003",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4688586.855,
+        "norte": 2063234.07
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.72354935,
+          4.33045288
+        ]
+      },
+      "properties": {
+        "codigo": "POL-548-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4697804.224,
+        "norte": 2037054.937
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65596079,
+          4.2438753
+        ]
+      },
+      "properties": {
+        "codigo": "POL-548-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4705275.83,
+        "norte": 2027451.943
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60275131,
+          4.35878844
+        ]
+      },
+      "properties": {
+        "codigo": "POL-548-003",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4711227.752,
+        "norte": 2040141.903
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61423934,
+          4.3050183
+        ]
+      },
+      "properties": {
+        "codigo": "POL-548-004",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4709931.778,
+        "norte": 2034198.981
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6021322,
+          4.35181749
+        ]
+      },
+      "properties": {
+        "codigo": "POL-548-005",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4711293.828,
+        "norte": 2039370.639
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.7024973,
+          4.30575691
+        ]
+      },
+      "properties": {
+        "codigo": "POL-548-006",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Deteriorado",
+        "este": 4700132.111,
+        "norte": 2034314.839
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.71698032,
+          4.34285279
+        ]
+      },
+      "properties": {
+        "codigo": "POL-548-007",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4698538.568,
+        "norte": 2038423.948
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65231453,
+          4.34733077
+        ]
+      },
+      "properties": {
+        "codigo": "POL-548-008",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Deteriorado",
+        "este": 4705720.439,
+        "norte": 2038893.762
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.83935783,
+          4.61273881
+        ]
+      },
+      "properties": {
+        "codigo": "POL-594-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4685065.002,
+        "norte": 2068330.738
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.80385592,
+          4.60507223
+        ]
+      },
+      "properties": {
+        "codigo": "POL-594-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4689002.6,
+        "norte": 2067467.005
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.78099833,
+          4.6540541
+        ]
+      },
+      "properties": {
+        "codigo": "POL-594-003",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4691561.145,
+        "norte": 2072875.565
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.83355195,
+          4.61028779
+        ]
+      },
+      "properties": {
+        "codigo": "POL-594-004",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4685708.421,
+        "norte": 2068057.019
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.79212142,
+          4.61749441
+        ]
+      },
+      "properties": {
+        "codigo": "POL-594-005",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4690310.579,
+        "norte": 2068836.078
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70101828,
+          4.61116567
+        ]
+      },
+      "properties": {
+        "codigo": "POL-594-006",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4700420.238,
+        "norte": 2068096.969
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58344164,
+          4.59139708
+        ]
+      },
+      "properties": {
+        "codigo": "POL-690-001",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4713462.165,
+        "norte": 2065862.055
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5369255,
+          4.62710409
+        ]
+      },
+      "properties": {
+        "codigo": "POL-690-002",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Destruido",
+        "este": 4718638.865,
+        "norte": 2069792.797
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.51496233,
+          4.69125873
+        ]
+      },
+      "properties": {
+        "codigo": "POL-690-003",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4721101.597,
+        "norte": 2076879.56
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.45903054,
+          4.62191729
+        ]
+      },
+      "properties": {
+        "codigo": "POL-690-004",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Deteriorado",
+        "este": 4727281.281,
+        "norte": 2069188.744
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.52753123,
+          4.62834147
+        ]
+      },
+      "properties": {
+        "codigo": "POL-690-005",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 3,
+        "estado": "Bueno",
+        "este": 4719681.909,
+        "norte": 2069925.931
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56518273,
+          4.62099206
+        ]
+      },
+      "properties": {
+        "codigo": "POL-690-006",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Destruido",
+        "este": 4715500.446,
+        "norte": 2069128.058
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62448343,
+          4.61191276
+        ]
+      },
+      "properties": {
+        "codigo": "POL-690-007",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4708915.291,
+        "norte": 2068147.843
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.48144618,
+          4.62692873
+        ]
+      },
+      "properties": {
+        "codigo": "POL-690-008",
+        "tipo": "Mojón de poligonal",
+        "id_tipo": 3,
+        "orden": 4,
+        "estado": "Bueno",
+        "este": 4724795.673,
+        "norte": 2069751.637
+      }
+    }
+  ]
+}

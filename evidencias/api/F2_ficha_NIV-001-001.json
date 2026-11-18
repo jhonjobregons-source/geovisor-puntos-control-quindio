@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.77780428,
+          4.49310759
+        ]
+      },
+      "properties": {
+        "codigo": "NIV-001-001",
+        "tipo": "Placa de nivelación",
+        "descripcion_tipo": "Punto con cota obtenida por nivelación geométrica",
+        "orden": 2,
+        "estado": "Deteriorado",
+        "altura_m": 1514.343,
+        "fecha_materializacion": "2023-01-04",
+        "municipio": "Armenia",
+        "departamento": "Quindío",
+        "este": 4691846.787,
+        "norte": 2055069.933
+      }
+    }
+  ],
+  "resumen": {
+    "inspecciones": [
+      {
+        "fecha": "2024-11-05",
+        "estado_encontrado": "Deteriorado",
+        "observacion": "Placa desgastada o base fisurada; usar con verificación"
+      },
+      {
+        "fecha": "2023-12-15",
+        "estado_encontrado": "Deteriorado",
+        "observacion": "Placa desgastada o base fisurada; usar con verificación"
+      },
+      {
+        "fecha": "2023-07-08",
+        "estado_encontrado": "Bueno",
+        "observacion": "Placa legible y estructura firme"
+      },
+      {
+        "fecha": "2023-01-04",
+        "estado_encontrado": "Bueno",
+        "observacion": "Materialización y primera ocupación"
+      }
+    ]
+  }
+}

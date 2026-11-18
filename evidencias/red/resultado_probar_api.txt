@@ -1,0 +1,51 @@
+====================================================================================================
+1. PETICIONES HTTP A LA API
+====================================================================================================
+GET  200  /salud                                                                      entidades=0
+GET  200  /departamento                                                               entidades=1
+GET  200  /municipios                                                                 entidades=12
+GET  200  /puntos                                                                     entidades=129
+GET  200  /puntos/buscar?tipo=1&estado=Bueno&orden_max=1                              entidades=10
+GET  200  /puntos/NIV-001-001                                                         entidades=1
+GET  200  /amarre?este=4702599.15&norte=2059542.011&n=3&solo_buenos=true              entidades=3
+GET  200  /amarre?lon=-75.6811&lat=4.5339&n=3&solo_buenos=true                        entidades=3
+POST 200  /zona/analisis                                                              entidades=11
+GET  200  /municipios/cobertura?estado=Bueno                                          entidades=12
+GET  404  /puntos/NO-EXISTE                                                           entidades=0
+GET  422  /amarre?este=4880000&norte=2050000                                          entidades=0
+GET  422  /puntos/buscar?municipio=abc                                                entidades=0
+POST 422  /zona/analisis                                                              entidades=0
+GET  422  /amarre?n=3                                                                 entidades=0
+
+====================================================================================================
+2. CONTRASTE API  vs  CONSULTA DIRECTA EN POSTGRESQL
+====================================================================================================
+Sistema de referencia
+   [OK] todas las geometrías de la base en EPSG:9377: [9377]  (API informa 9377)
+F1 · Visualización
+   [OK] municipios: API=12  SQL=12
+   [OK] puntos:     API=129  SQL=129
+   [OK] área plana del departamento: API=1931.03  SQL=1931.03  (suma de municipios 1931.03)
+F2 · Consulta de atributos
+   [OK] búsqueda: API=['GNSS-130-002', 'GNSS-130-003', 'GNSS-272-002', 'GNSS-302-002', 'GNSS-302-003', 'GNSS-302-007', 'GNSS-470-001', 'GNSS-548-003', 'GNSS-690-001', 'GNSS-690-005']
+         SQL=['GNSS-130-002', 'GNSS-130-003', 'GNSS-272-002', 'GNSS-302-002', 'GNSS-302-003', 'GNSS-302-007', 'GNSS-470-001', 'GNSS-548-003', 'GNSS-690-001', 'GNSS-690-005']
+   [OK] ficha Este/Norte: API=(4691846.787, 2055069.933)  SQL=(4691846.787, 2055069.933)
+   [OK] inspecciones: API=4  SQL=4
+F3 · Consulta espacial
+   [OK] 3 más cercanos (orden por distancia exacta, sin índice):
+         API=[('POL-001-002', 2476.104, 298.6918), ('POL-001-001', 2564.503, 295.6549), ('POL-190-002', 4533.438, 23.7297)]
+         SQL=[('POL-001-002', 2476.104, 298.6918), ('POL-001-001', 2564.503, 295.6549), ('POL-190-002', 4533.438, 23.7297)]
+   [OK] clic en el mapa (lon/lat transformado a 9377) da los mismos puntos: ['POL-001-002', 'POL-001-001', 'POL-190-002']
+F4 · Complementaria
+   [OK] área/perímetro/puntos: API=(191.5495, 55408.9, 11)  SQL=(191.5495, 55408.90, 11)
+   [OK] la suma de % por municipio es ~100 % (zona dentro del Quindío): 100.1 %
+F5 · Adicional
+   [OK] conteo por unión espacial (API) = conteo por llave foránea (SQL) en los 12 municipios
+Validaciones y errores controlados
+   [OK] punto inexistente -> 404 (obtenido 404)
+   [OK] ubicación fuera del Quindío -> 422 (obtenido 422)
+   [OK] código DIVIPOLA mal formado -> 422 (obtenido 422)
+   [OK] geometría que no es polígono -> 422 (obtenido 422)
+   [OK] F3 sin ubicación -> 422 (obtenido 422)
+
+RESULTADO: 17 de 17 comprobaciones correctas

@@ -1,0 +1,14 @@
+Peticiones HTTP capturadas desde el navegador durante la prueba del visor
+(método, código de estado, endpoint)
+
+GET  200 /api/salud
+GET  200 /api/catalogos
+GET  200 /api/puntos
+GET  200 /api/departamento
+GET  200 /api/municipios
+GET  200 /api/puntos/buscar?tipo=1&estado=Bueno
+GET  200 /api/puntos/GNSS-130-002
+GET  200 /api/amarre?este=4702599.15&norte=2059542.011&n=3&solo_buenos=true
+POST 200 /api/zona/analisis
+GET  200 /api/municipios/cobertura?estado=Bueno
+GET  200 /api/amarre?este=4702599.15&norte=2059542.011&n=3
